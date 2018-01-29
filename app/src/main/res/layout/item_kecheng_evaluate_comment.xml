@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+    >
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:paddingLeft="10dp"
+       android:background="@color/white"
+       >
+
+
+       <TextView
+
+           android:id="@+id/tv_item_kecheng_evaluate_comment_name"
+           android:layout_width="wrap_content"
+           android:layout_height="40dp"
+           android:background="@color/white"
+           android:gravity="center_vertical"
+           android:paddingLeft="10dp"
+           android:paddingRight="5dp"
+           tools:text="李晓红"
+           android:textColor="@color/blue_comment"
+           android:textSize="13sp"
+           />
+
+       <TextView
+           android:id="@+id/tv_item_kecheng_evaluate_comment_huifu"
+           android:layout_width="wrap_content"
+           android:layout_height="40dp"
+           android:gravity="center_vertical"
+           android:text="回复"
+           android:textColor="@color/gray_66"
+           android:textSize="13sp"
+           />
+
+       <TextView
+
+           android:id="@+id/tv_item_kecheng_evaluate_comment_toname"
+           android:layout_width="wrap_content"
+           android:layout_height="40dp"
+           android:background="@color/white"
+           android:gravity="center_vertical"
+           android:paddingRight="5dp"
+           android:paddingLeft="5dp"
+           tools:text="李晓红"
+           android:textColor="@color/blue_comment"
+           android:textSize="13sp"
+           />
+
+
+       <TextView
+           android:paddingRight="10dp"
+           android:id="@+id/tv_item_kecheng_evaluate_comment_comment"
+           android:background="@color/white"
+           android:paddingTop="10dp"
+           android:paddingBottom="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           tools:text="那你很棒棒哦，那你很棒棒哦。"
+           android:gravity="center_vertical"
+           android:textSize="14sp"
+           android:textColor="@color/gray_33"
+
+           />
+
+   </LinearLayout>
+
+
+</LinearLayout>

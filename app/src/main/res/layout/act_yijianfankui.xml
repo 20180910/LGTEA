@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+    >
+<include layout="@layout/app_title"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textColor="@color/gray_66"
+        android:text="我来说一下"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/background_f2"/>
+    <EditText
+        android:id="@+id/et_yijianfankui"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:padding="10dp"
+        android:gravity="left"
+        android:hint="请输入反馈内容..."
+        android:textColor="@color/gray_99"
+        android:background="@color/white"
+        android:textSize="13sp"
+        />
+    <com.github.customview.MyTextView
+        android:id="@+id/tv_yijianfankui_tijiao"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:my_tv_solid="@color/home_text_color"
+        app:my_tv_corner_radius="5dp"
+        android:text="提交"
+        />
+
+</LinearLayout>

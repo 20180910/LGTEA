@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/background_f2"
+              android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_title_height"
+        android:background="@color/home_text_color"
+        android:gravity="center"
+        android:text="我的"
+        android:textColor="@color/white"
+        android:textSize="17sp"/>
+
+<com.sk.lgtea.base.ProgressLayout
+    android:id="@id/pl_load"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_f2"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/ll_my_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <com.github.customview.MyImageView
+                android:id="@+id/iv_my_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/my_people"
+                app:my_iv_radius="25dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_my_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="10dp"
+                    android:text="王某某"
+                    android:textColor="@color/gray_33"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_my_gonghao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_my_name"
+                    android:text="工号：111012"
+                    android:textColor="@color/gray_99"
+                    android:textSize="12sp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/my_right"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_my_collection"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:layout_marginTop="5dp"
+            android:text="我的收藏"
+            android:paddingLeft="10dp"
+            android:textSize="14sp"
+            android:textColor="@color/gray_66"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/my_shoucang"
+            android:drawableRight="@drawable/my_right"
+            android:layout_marginBottom="2px"
+
+            />
+        <TextView
+            android:id="@+id/tv_my_download"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:text="我的下载"
+            android:paddingLeft="10dp"
+            android:textSize="14sp"
+            android:textColor="@color/gray_66"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/my_xiazai"
+            android:layout_marginBottom="2px"
+            android:drawableRight="@drawable/my_right"
+
+            />
+        <TextView
+            android:id="@+id/tv_my_yijianfankui"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:text="意见反馈"
+            android:paddingLeft="10dp"
+            android:textSize="14sp"
+            android:textColor="@color/gray_66"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/my_yijianfankui"
+            android:layout_marginBottom="2px"
+            android:drawableRight="@drawable/my_right"
+            />
+        <TextView
+            android:id="@+id/tv_my_about_us"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:text="关于我们"
+            android:paddingLeft="10dp"
+            android:textSize="14sp"
+            android:textColor="@color/gray_66"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/my_about_us"
+            android:layout_marginBottom="2px"
+            android:drawableRight="@drawable/my_right"
+            />
+        <TextView
+            android:id="@+id/tv_my_setting"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:text="设置"
+            android:paddingLeft="10dp"
+            android:textSize="14sp"
+            android:textColor="@color/gray_66"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/my_setting"
+            android:layout_marginBottom="2px"
+            android:drawableRight="@drawable/my_right"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"/>
+    </LinearLayout>
+
+</com.sk.lgtea.base.ProgressLayout>
+
+</LinearLayout>

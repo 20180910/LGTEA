@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+    >
+
+    <include layout="@layout/app_title"/>
+
+    <com.sk.lgtea.base.ProgressLayout
+        android:id="@id/pl_load"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <in.srain.cube.views.ptr.PtrClassicFrameLayout
+            android:id="@id/pcfl_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:ptr_ratio_of_header_height_to_refresh="1.2"
+            app:ptr_resistance="2.1"
+            >
+
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@id/nsv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_taolun_details_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="如何才能学好印刷出版呢？"
+                        android:textColor="@color/gray_33"
+                        android:textSize="16sp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        >
+
+                        <com.github.customview.MyImageView
+                            android:id="@+id/iv_taolun_details_icon"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/my_people"
+                            app:my_iv_radius="15dp"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:orientation="vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            >
+
+                            <TextView
+                                android:id="@+id/tv_taolun_details_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="李老师"
+                                android:textColor="@color/blue_comment"
+                                android:textSize="13sp"
+                                />
+
+                            <TextView
+                                android:id="@+id/tv_taolun_details_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="今天12:12"
+                                android:textColor="@color/gray_99"
+                                android:textSize="11sp"
+                                />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_taolun_details_message"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:drawableLeft="@drawable/taolun_message"
+                            android:drawablePadding="5dp"
+                            android:gravity="center_vertical"
+                            android:text="26"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_taolun_details_zan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:drawableLeft="@drawable/my_collection_zan"
+                            android:drawablePadding="5dp"
+                            android:gravity="center_vertical"
+                            android:text="26"
+                            />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/tv_item_taolun_details_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textColor="@color/gray_66"
+                        android:textSize="13sp"
+
+                        tools:text="那你很棒棒哟。那你很棒棒哟。那你很棒棒哟。那你很棒棒哟。那你很棒棒哟。那你很棒棒哟。"
+                        />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_item_taolun_details_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+
+                        >
+
+                    </android.support.v7.widget.RecyclerView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/background_f2"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/tv_taolun_details_all"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="全部评论"
+                        android:textColor="@color/gray_66"
+                        android:textSize="15sp"
+                        />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_taolun_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2px"
+                        android:background="@color/white"
+                        >
+
+                    </android.support.v7.widget.RecyclerView>
+
+                </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+
+        </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray_d7"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2px"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+
+                >
+
+                <com.github.customview.MyRelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    app:my_rl_border_color="@color/gray_d7"
+                    app:my_rl_border_width="1dp"
+                    app:my_rl_corner_radius="5dp"
+                    app:my_rl_solid="@color/white"
+                    >
+
+                    <EditText
+
+                        android:id="@+id/et_taolun_details_discuss"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:background="@color/white"
+                        android:cursorVisible="false"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textSize="13sp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/iv_taolun_details_discuss"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/pinglun_icon"
+                        />
+
+
+                </com.github.customview.MyRelativeLayout>
+
+                <ImageView
+                    android:id="@+id/iv_taolun_details_zan"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:padding="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/icon_dianzan"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_taolun_details_collection"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:padding="8dp"
+                    android:scaleType="centerCrop"
+
+                    android:src="@drawable/icon_shoucang"
+                    android:visibility="gone"
+                    />
+
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/iv_taolun_details_share"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:padding="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/icon_fenxiang"
+                    />
+
+                <com.github.customview.MyTextView
+                    android:id="@+id/tv_taolun_details_pinglun"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:text="评论"
+                    android:textColor="@color/white"
+                    android:visibility="gone"
+                    app:my_tv_corner_radius="5dp"
+                    app:my_tv_solid="@color/home_text_color"
+
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </com.sk.lgtea.base.ProgressLayout>
+
+
+</LinearLayout>

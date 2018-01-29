@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/background_f2"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        >
+        <com.github.customview.MyImageView
+            android:id="@+id/iv_item_yitijiao_icon"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/my_people"
+            app:my_iv_radius="18dp"
+            />
+        <TextView
+            android:id="@+id/tv_item_yitijiao_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="刘同学"
+            android:textSize="13sp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/gray_66"
+            />
+        <TextView
+            android:id="@+id/tv_item_yitijiao_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12:12"
+            android:textSize="13sp"
+            android:gravity="right"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/gray_66"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_item_yitijiao_summary"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content"
+        android:text="作业难度还可以，喜欢这门课"
+        android:textColor="@color/gray_66"
+        android:textSize="15sp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_item_yitijiao_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp"
+        >
+
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl_item_yitijiao_img1"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            >
+            <ImageView
+                android:id="@+id/iv_item_yitijiao_img1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:src="@drawable/banner"
+                />
+            <TextView
+                android:visibility="gone"
+                android:padding="5dp"
+                android:id="@+id/tv_item_yitijiao_img1"
+                android:layout_width="match_parent"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:background="@color/home_text_color"
+                android:layout_height="match_parent"
+                android:text=""
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_item_yitijiao_img2"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            >
+            <ImageView
+                android:id="@+id/iv_item_yitijiao_img2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/banner"
+                android:layout_centerInParent="true"
+                />
+            <TextView
+                android:visibility="gone"
+                android:padding="5dp"
+                android:id="@+id/tv_item_yitijiao_img2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:background="@color/home_text_color"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_item_yitijiao_img3"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            >
+            <ImageView
+                android:id="@+id/iv_item_yitijiao_img3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:src="@drawable/banner"
+                />
+            <TextView
+                android:visibility="gone"
+                android:padding="5dp"
+                android:id="@+id/tv_item_yitijiao_img3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:background="@color/home_text_color"
+                />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/background_f2"
+        />
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+    >
+<include layout="@layout/app_title"/>
+
+    <com.github.customview.MyEditText
+        android:id="@+id/et_edit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:my_et_solid="@color/white"
+        android:layout_marginTop="2px"
+        android:gravity="center_vertical"
+        android:hint="请输入手机号"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/gray_33"
+        android:textSize="14sp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/background_f2"
+        />
+
+    <com.github.customview.MyTextView
+        android:id="@+id/tv_edit_baocun"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="保存"
+        android:gravity="center"
+        android:textColor="@color/white"
+        app:my_tv_solid="@color/home_text_color"
+      android:layout_marginTop="40dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="16sp"
+        app:my_tv_corner_radius="4dp"
+        />
+</LinearLayout>

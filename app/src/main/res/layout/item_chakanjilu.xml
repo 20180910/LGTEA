@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/background_f2"
+    >
+    <TextView
+        android:id="@+id/tv_item_chakanjilu_timedate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:text="12月12日"
+        android:textColor="@color/gray_66"
+        android:textSize="15sp"
+        android:paddingLeft="10dp"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_item_chakanjilu"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2px"
+        android:layout_marginBottom="5dp"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

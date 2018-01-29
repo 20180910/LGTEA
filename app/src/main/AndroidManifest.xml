@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.sk.lgtea"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <!-- 摄像头、手电筒 -->
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.camera.flash" />
+
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <!-- 拨号权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name=".MyApplication" >
+        <activity android:name=".module.my.activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".module.home.activity.MainActivity"/>
+        <activity android:name=".module.my.activity.SettingActivity"/>
+        <activity android:name=".module.my.activity.MyDataActivity"/>
+        <activity android:name=".module.my.activity.BackPwdActivity"/>
+        <activity android:name=".module.my.activity.ForgetPWDActivity"/>
+        <activity android:name=".module.my.activity.SettingPwdActivity"/>
+        <activity android:name=".module.my.activity.AboutUsActivity"/>
+        <activity android:name=".module.my.activity.MyCollectionActivity"/>
+        <activity android:name=".module.my.activity.MyUploadActivity"/>
+        <activity android:name=".module.my.activity.YijianfankuiActivity"/>
+        <activity android:name=".module.taolun.activity.TaolunDetailsActivity"/>
+        <activity android:name=".module.taolun.activity.MoreReplyActivity"/>
+        <activity android:name=".module.taolun.activity.FatieActivity"
+                  android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".module.home.activity.NewsActvity"/>
+        <activity android:name=".module.home.activity.NewsDetailsActivity"/>
+        <activity android:name=".module.home.activity.ZiXunDetailActivity"/>
+        <activity android:name=".module.home.activity.KejianActivity"
+                 />
+
+        <activity android:name=".module.home.activity.KeChengDetailActivity"
+                  android:configChanges="orientation|keyboardHidden|screenSize"
+                  android:screenOrientation="portrait"
+                 />
+        <activity android:name=".module.home.activity.KeChengDetailImgActivity"
+                  android:configChanges="orientation|keyboardHidden|screenSize"
+                  android:screenOrientation="portrait"
+                 />
+        <activity android:name=".module.home.activity.KechengMoreReplyActivity"/>
+        <activity android:name=".module.home.activity.TongjiActivity"/>
+        <activity android:name=".module.home.activity.ChakanjiluActivity"/>
+        <activity android:name=".module.home.activity.TijiaojiluActivity"/>
+        <activity android:name=".module.home.activity.BenzhouzuoyeActivity"/>
+        <activity android:name=".module.home.activity.KaoqinActivity"/>
+        <activity android:name=".module.home.activity.KaoqinjilvActivity"/>
+        <activity android:name=".module.home.activity.KechengbiaoActivity"/>
+        <activity android:name=".module.my.activity.EditPhoneActivity"/>
+        <activity android:name=".module.home.activity.PDF2Activity"/>
+
+
+        <service android:name=".tools.download.service.DownloadService"/>
+        <receiver
+            android:name=".broadcast.DownloadBro"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="download" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

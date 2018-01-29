@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_f2"
+    android:orientation="vertical"
+    >
+
+    <com.sk.lgtea.base.ProgressLayout
+        android:id="@id/pl_load"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <in.srain.cube.views.ptr.PtrClassicFrameLayout
+            android:id="@id/pcfl_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:ptr_resistance="2.1"
+            app:ptr_ratio_of_header_height_to_refresh="1.2"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/white"
+                >
+                <RelativeLayout
+                    android:id="@+id/rl_kecheng_detail_pdf"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/iv_kecheng_detail_pdf"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/banner"
+                        />
+
+                    <android.support.v4.view.ViewPager
+                        android:visibility="gone"
+                        android:id="@+id/vp_kecheng_detail"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/tv_kecheng_detail_bg"
+                        android:layout_width="match_parent"
+                        android:background="@color/transparent_half"
+                        android:layout_height="match_parent"
+                        />
+                    <com.github.customview.MyTextView
+                        android:id="@+id/tv_kecheng_detail_look"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:alpha="1"
+                        android:layout_centerInParent="true"
+                        android:paddingBottom="9dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="9dp"
+                        android:text="点击查看"
+                        android:textColor="@color/theme_color"
+                        app:my_tv_all_line="true"
+                        app:my_tv_border_color="@color/theme_color"
+                        app:my_tv_border_width="2px"
+                        app:my_tv_solid="@color/transparent_half"
+                        />
+                    <ImageView
+                        android:layout_marginLeft="10dp"
+                        android:padding="10dp"
+                        android:id="@+id/iv_kecheng_detail_back_pdf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/back_white"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/rl_kecheng_detail_video"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+                    <com.sk.lgtea.video.LandLayoutVideo
+                        android:id="@+id/llv_kechengdetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </com.sk.lgtea.video.LandLayoutVideo>
+
+                    <ImageView
+                        android:id="@+id/iv_kecheng_detail_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/back_white"
+                        />
+
+                </RelativeLayout>
+
+                <android.support.v4.widget.NestedScrollView
+                    android:id="@id/nsv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            >
+
+                            <TextView
+                                android:id="@+id/tv_kecheng_detail_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="25dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="25dp"
+                                android:maxLines="1"
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:text="第三章素描设计"
+                                android:textSize="16sp"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2px"
+                            android:background="@color/white"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            >
+
+                            <LinearLayout
+                                android:id="@+id/ll_kecheng_share"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingBottom="15dp"
+                                android:paddingTop="15dp"
+                                >
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/study_share"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:textSize="15sp"
+                                    android:textColor="@color/gray_33"
+                                    android:text="分享"
+                                    />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_kecheng_download"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingBottom="15dp"
+                                android:paddingTop="15dp"
+                                >
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/study_download"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/textView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:textSize="15sp"
+                                    android:textColor="@color/gray_33"
+                                    android:text="附件"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_kecheng_collection"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingBottom="15dp"
+                                android:paddingTop="15dp"
+                                >
+
+                                <ImageView
+                                    android:id="@+id/iv_kecheng_collection"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/study_collnect_normal"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:text="收藏"
+                                    android:textSize="15sp"
+                                    android:textColor="@color/gray_33"
+                                    />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_kecheng_dianzan"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingBottom="15dp"
+                                android:paddingTop="15dp"
+                                >
+
+                                <ImageView
+                                    android:id="@+id/iv_kecheng_dianzan"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/study_zan"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:text="点赞"
+                                    android:textSize="15sp"
+                                    android:textColor="@color/gray_33"
+                                    />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            >
+
+                            <com.flyco.tablayout.CommonTabLayout
+                                android:id="@+id/ctl_study_kecheng"
+                                android:layout_width="match_parent"
+                                android:layout_height="55dp"
+                                android:background="@color/white"
+                                android:padding="10dp"
+                                app:tl_indicator_color="@color/theme_color"
+                                app:tl_textSelectColor="@color/theme_color"
+                                app:tl_textUnselectColor="@color/gray_66"
+                                >
+
+                            </com.flyco.tablayout.CommonTabLayout>
+
+                            <FrameLayout
+                                android:id="@+id/fl_study_kecheng"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                >
+                            </FrameLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </android.support.v4.widget.NestedScrollView>
+
+            </LinearLayout>
+
+        </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+    </com.sk.lgtea.base.ProgressLayout>
+
+</LinearLayout>
+

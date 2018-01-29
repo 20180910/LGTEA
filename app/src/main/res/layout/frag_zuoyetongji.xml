@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:background="@color/white"
+              android:orientation="vertical"
+    >
+
+   <com.sk.lgtea.base.ProgressLayout
+       android:id="@id/pl_load"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <android.support.v4.widget.NestedScrollView
+           android:id="@id/nsv"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:background="@color/white"
+               android:orientation="vertical"
+               >
+
+               <TextView
+                   android:id="@+id/tv_zuoyetongji_kecheng"
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   android:drawableRight="@drawable/my_right"
+                   android:gravity="center_vertical"
+                   android:padding="10dp"
+                   android:maxLines="1"
+                   android:ellipsize="end"
+                   tools:text="印刷01班"
+                   android:textColor="@color/gray_66"
+                   android:textSize="15sp"/>
+
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="10dp"
+                   android:background="@color/background_f2"
+                   />
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   android:background="@color/white"
+                   android:gravity="center_vertical"
+                   android:orientation="horizontal"
+                   android:padding="10dp"
+                   >
+
+                   <View
+                       android:layout_width="2dp"
+                       android:layout_height="15dp"
+                       android:background="@color/home_text_color"
+                       />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:paddingLeft="10dp"
+                       android:text="最新作业"
+                       android:textColor="@color/gray_66"
+                       android:textSize="15sp"
+                       />
+
+                   <TextView
+                       android:id="@+id/tv_zuoyetongji_zuixin_details"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:drawableRight="@drawable/my_right"
+                       android:gravity="right|center"
+                       android:text="查看详情"
+                       android:textColor="@color/gray_66"
+                       android:textSize="15sp"
+                       />
+
+
+               </LinearLayout>
+
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="2px"
+                   android:background="@color/background_f2"
+                   />
+
+
+
+               <SeekBar
+                   android:id="@+id/sb_zuoyetongji"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:paddingTop="2dp"
+                   android:paddingBottom="2dp"
+                   android:gravity="center_vertical"
+                   android:maxHeight="5dp"
+                   android:minHeight="5dp"
+
+                   android:layout_margin="20dp"
+                   android:max="100"
+                   android:background="@null"
+                   android:progress="20"
+                   android:progressDrawable="@drawable/tongji_seek_progress"
+                   android:thumb="@drawable/tongji_tuoyuan"
+                   />
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="@color/white"
+                   android:gravity="center"
+                   android:orientation="horizontal"
+
+                   >
+
+                   <TextView
+                       android:id="@+id/tv_zuoyetongji_yijiao_num"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:paddingRight="10dp"
+                       android:text="已交 30人"
+                       android:textColor="@color/gray_66"
+                       android:textSize="13sp"
+                       />
+
+                   <TextView
+                       android:id="@+id/tv_zuoyetongji_weijiao_num"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:paddingLeft="10dp"
+                       android:text="未交 15人"
+                       android:textColor="@color/gray_66"
+                       />
+
+               </LinearLayout>
+               <View
+                   android:layout_marginTop="20dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="10dp"
+                   android:background="@color/background_f2"
+                   />
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   android:background="@color/white"
+                   android:gravity="center_vertical"
+                   android:orientation="horizontal"
+                   android:padding="10dp"
+                   >
+
+                   <View
+                       android:layout_width="2dp"
+                       android:layout_height="15dp"
+                       android:background="@color/home_text_color"
+                       />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:paddingLeft="10dp"
+                       android:text="本周作业提交"
+                       android:textColor="@color/gray_66"
+                       android:textSize="15sp"
+                       />
+
+                   <TextView
+                       android:id="@+id/tv_zuoyetongji_benzhou_details"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:drawableRight="@drawable/my_right"
+                       android:gravity="right|center"
+                       android:text="查看详情"
+                       android:textColor="@color/gray_66"
+                       android:textSize="15sp"
+                       />
+               </LinearLayout>
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="2px"
+                   android:layout_marginBottom="10dp"
+                   android:background="@color/background_f2"
+                   />
+               <LinearLayout
+                   android:layout_margin="10dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="180dp"
+                   android:orientation="vertical"
+                   android:background="@drawable/icon_chuqin"
+                   >
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                      android:padding="10dp"
+                       android:orientation="horizontal"
+                       android:gravity="center_vertical"
+                       >
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="本周提交率"
+                           android:textSize="13sp"
+                           android:textColor="@color/white"
+                           />
+                       <TextView
+                           android:id="@+id/tv_zuoyetongji_tijiaolv"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text="80%"
+                           android:textSize="13sp"
+                           android:textColor="@color/white"
+                           android:gravity="right"
+
+                           />
+
+                   </LinearLayout>
+                   <com.sk.lgtea.linechart.LineChartView
+                      android:paddingBottom="10dp"
+                       android:id="@+id/lcv_zuoyetongji"
+                       android:layout_width="match_parent"
+                       android:layout_marginLeft="-30dp"
+                       android:layout_height="0dp"
+                       android:layout_weight="1"
+                       />
+
+               </LinearLayout>
+
+
+
+
+
+           </LinearLayout>
+
+       </android.support.v4.widget.NestedScrollView>
+   </com.sk.lgtea.base.ProgressLayout>
+</LinearLayout>

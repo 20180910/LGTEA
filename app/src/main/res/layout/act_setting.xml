@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+    >
+<include layout="@layout/app_title"/>
+
+    <LinearLayout
+        android:id="@+id/ll_setting_xiugai"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="登录密码"
+           android:layout_gravity="center_vertical"
+            android:textColor="@color/gray_66"
+            android:textSize="13sp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="right|center"
+            android:drawablePadding="5dp"
+            android:text="修改"
+            android:drawableRight="@drawable/my_right"
+           android:layout_gravity="center_vertical"
+            android:textColor="@color/gray_66"
+            android:textSize="13sp"
+            />
+
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/background_f2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+    <LinearLayout
+        android:id="@+id/ll_setting_huancun"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="清除缓存"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/gray_66"
+            android:textSize="13sp"
+            />
+        <TextView
+            android:id="@+id/tv_setting_huancun"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="right|center"
+            android:text="0B"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/gray_66"
+            android:textSize="13sp"
+            />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/background_f2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="消息提醒"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/gray_66"
+            android:textSize="13sp"
+            />
+        <com.suke.widget.SwitchButton
+            android:id="@+id/sb_setting"
+            android:layout_width="35dp"
+            android:layout_height="20dp"
+            app:sb_checked="true"
+            app:sb_show_indicator="false"
+            app:sb_checked_color="@color/home_text_color"
+            />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/background_f2"/>
+    <TextView
+        android:id="@+id/tv_setting_sign_out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="17sp"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/home_text_color"
+        android:text="退出账号"
+
+        />
+
+
+</LinearLayout>

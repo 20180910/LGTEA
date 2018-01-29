@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/background_f2"
+    >
+<include layout="@layout/app_title"/>
+   <com.sk.lgtea.base.ProgressLayout
+       android:id="@id/pl_load"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="horizontal"
+           android:background="@color/white"
+           >
+           <LinearLayout
+               android:layout_width="35dp"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:background="@color/white"
+               >
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   android:text=""
+                   />
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="2px"
+                   android:background="@color/background_f2"
+                   />
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="100dp"
+                   android:text="1"
+                   android:gravity="center"
+                   />
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="2px"
+                   android:background="@color/background_f2"
+                   />
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="100dp"
+                   android:text="2"
+                   android:gravity="center"
+                   />
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="2px"
+                   android:background="@color/background_f2"
+                   />
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_marginTop="20dp"
+                   android:layout_height="2px"
+                   android:background="@color/background_f2"
+                   />
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="100dp"
+                   android:text="3"
+                   android:gravity="center"
+                   />
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="2px"
+                   android:background="@color/background_f2"
+                   />
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="100dp"
+                   android:text="4"
+                   android:gravity="center"
+                   />
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="2px"
+                   android:background="@color/background_f2"
+                   />
+
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:background="@color/white"
+               >
+
+               <android.support.v7.widget.RecyclerView
+                   android:id="@+id/rv_kechengbiao"
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   >
+
+               </android.support.v7.widget.RecyclerView>
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="2px"
+                   android:background="@color/background_f2"
+                   />
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:background="@color/white"
+                   >
+
+                   <android.support.v7.widget.RecyclerView
+                       android:id="@+id/rv_xingqiyi"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       >
+
+                   </android.support.v7.widget.RecyclerView>
+
+                   <android.support.v7.widget.RecyclerView
+                       android:id="@+id/rv_xingqier"
+                       android:layout_width="0dp"
+                       android:layout_weight="1"
+                       android:layout_height="wrap_content"
+                       >
+
+                   </android.support.v7.widget.RecyclerView>
+                   <android.support.v7.widget.RecyclerView
+                       android:id="@+id/rv_xingqisan"
+                       android:layout_width="0dp"
+                       android:layout_weight="1"
+                       android:layout_height="wrap_content"
+                       >
+
+                   </android.support.v7.widget.RecyclerView>
+                   <android.support.v7.widget.RecyclerView
+                       android:id="@+id/rv_xingqisi"
+                       android:layout_width="0dp"
+                       android:layout_weight="1"
+                       android:layout_height="wrap_content"
+                       >
+
+                   </android.support.v7.widget.RecyclerView>
+                   <android.support.v7.widget.RecyclerView
+                       android:id="@+id/rv_xingqiwu"
+                       android:layout_width="0dp"
+                       android:layout_weight="1"
+                       android:layout_height="wrap_content"
+                       >
+
+                   </android.support.v7.widget.RecyclerView>
+                   <android.support.v7.widget.RecyclerView
+                       android:id="@+id/rv_xingqiliu"
+                       android:layout_width="0dp"
+                       android:layout_weight="1"
+                       android:layout_height="wrap_content"
+                       >
+
+                   </android.support.v7.widget.RecyclerView>
+                   <android.support.v7.widget.RecyclerView
+                       android:id="@+id/rv_xingqitian"
+                       android:layout_width="0dp"
+                       android:layout_weight="1"
+                       android:layout_height="wrap_content"
+                       >
+
+                   </android.support.v7.widget.RecyclerView>
+
+               </LinearLayout>
+
+
+           </LinearLayout>
+
+
+       </LinearLayout>
+   </com.sk.lgtea.base.ProgressLayout>
+    </LinearLayout>
+
+
+

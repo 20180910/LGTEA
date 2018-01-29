@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/gray_f6"
+                android:fitsSystemWindows="true"
+    >
+    <FrameLayout
+        android:id="@+id/layout_main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/line1"
+        ></FrameLayout>
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@+id/rg_main"
+        android:background="@color/gray_d7"/>
+
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <com.github.customview.MyRadioButton
+            android:id="@+id/rb_home"
+            style="@style/radio_home"
+            android:checked="true"
+            android:text="首页"
+            app:my_radio_checked="@drawable/home_tab1_select"
+            app:my_radio_checked_color="@color/home_text_color"
+            app:my_radio_checked_drawable="top"
+            app:my_radio_normal="@drawable/home_tab1_normal"
+            app:my_radio_normal_color="@color/gray_99"
+            />
+
+
+
+        <com.github.customview.MyRadioButton
+            android:id="@+id/rb_home_taolun"
+            style="@style/radio_home"
+            android:text="讨论区"
+            app:my_radio_checked="@drawable/home_tab3_select"
+            app:my_radio_checked_color="@color/home_text_color"
+            app:my_radio_checked_drawable="top"
+            app:my_radio_normal="@drawable/home_tab3_normal"
+            app:my_radio_normal_color="@color/gray_99"
+            />
+
+        <com.github.customview.MyRadioButton
+            android:id="@+id/rb_home_my"
+            style="@style/radio_home"
+            android:text="我的"
+            app:my_radio_checked="@drawable/home_tab4_select"
+            app:my_radio_checked_color="@color/home_text_color"
+            app:my_radio_checked_drawable="top"
+            app:my_radio_normal="@drawable/home_tab4_normal"
+            app:my_radio_normal_color="@color/gray_99"
+            />
+    </RadioGroup>
+</RelativeLayout>

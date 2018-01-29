@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        >
+        <TextView
+            android:id="@+id/tv_item_kaoqinjilv_xuhao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1."
+            android:textColor="@color/gray_66"
+            android:textSize="13sp"
+            />
+        <com.github.customview.MyImageView
+            android:id="@+id/iv_item_kaoqinjilv_icon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/my_people"
+            app:my_iv_radius="18dp"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:id="@+id/tv_item_kaoqinjilv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="王某某"
+            android:textColor="@color/gray_66"
+            android:textSize="13sp"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:id="@+id/tv_item_kaoqinjilv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12:12"
+            android:gravity="right"
+            android:textColor="@color/gray_66"
+            android:textSize="13sp"
+            android:layout_marginLeft="10dp"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
